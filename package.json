@@ -1,8 +1,13 @@
 {
   "name": "ignite-ddd-first-project",
   "packageManager": "yarn@4.4.1",
+  "scripts": {
+    "test": "vitest run --reporter verbose",
+    "test:watch": "vitest watch"
+  },
   "devDependencies": {
     "@types/node": "^24.0.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
   }
 }
