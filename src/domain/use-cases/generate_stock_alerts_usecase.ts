@@ -14,7 +14,13 @@ export class GenerateStockAlertsUseCase {
 
     for (const product of products) {
       if (product.quantity <= product.minimumQuantity) {
-        const alert = new Alert({
+        // const alert = new Alert({
+        //   productId: new UniqueEntityID(product.id.toString()),
+        //   alertDate: new Date(),
+        //   method: "EMAIL",
+        // });
+
+        const alert = Alert.create({
           productId: new UniqueEntityID(product.id.toString()),
           alertDate: new Date(),
           method: "EMAIL",
