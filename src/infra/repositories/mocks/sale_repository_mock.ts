@@ -1,6 +1,7 @@
 // import { Sale } from "../entities/sale";
 import { Sale } from "../../../domain/entities/sale";
 import { ISaleRepository } from "../../../domain/repositories/sale_repository_interface";
+import { UniqueEntityID } from "../../../core/entities/unique_entity_id";
 
 export class SaleRepositoryMock implements ISaleRepository {
   private sales: Sale[] = [
@@ -11,7 +12,7 @@ export class SaleRepositoryMock implements ISaleRepository {
         saleDate: new Date(), 
         saleValue: 100 
       },
-      "9d24cdd3-2844-4655-8f07-ed9b7524f095"
+      new UniqueEntityID("9d24cdd3-2844-4655-8f07-ed9b7524f095")
     ),
     new Sale(
       { 
@@ -20,7 +21,7 @@ export class SaleRepositoryMock implements ISaleRepository {
         saleDate: new Date(), 
         saleValue: 50 
       },
-      "f23dc5c3-8980-4676-b491-4b9c33c3dacf"
+      new UniqueEntityID("f23dc5c3-8980-4676-b491-4b9c33c3dacf")
     )
   ];
 

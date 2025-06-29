@@ -17,8 +17,8 @@ export class AlertRepositoryMock implements IAlertRepository {
         productId: new UniqueEntityID("331c425e-4f72-4e82-ad68-bf552f500750"), 
         method: "NOTIFICATION", 
         alertDate: new Date()
-      }, 
-      "02aac7e3-ecf8-42c3-9024-80fb58b9ddd0"
+      },
+      new UniqueEntityID("02aac7e3-ecf8-42c3-9024-80fb58b9ddd0")
     ),
     new Alert(
       {
@@ -26,7 +26,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "EMAIL", 
         alertDate: new Date()
       },
-      "2dbf0837-e28a-4b5e-a122-0c693b6f3074"
+      new UniqueEntityID("2dbf0837-e28a-4b5e-a122-0c693b6f3074")
     ),
     new Alert(
       {
@@ -34,7 +34,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "NOTIFICATION", 
         alertDate: new Date()
       },
-      "f31c8742-55c7-451a-a05f-82667c8d6278"
+      new UniqueEntityID("f31c8742-55c7-451a-a05f-82667c8d6278")
     ),
     new Alert(
       {
@@ -42,7 +42,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "EMAIL", 
         alertDate: new Date()
       },
-      "811f5597-dc24-4bf3-a0d0-5afdeb8b2a5a" 
+      new UniqueEntityID("811f5597-dc24-4bf3-a0d0-5afdeb8b2a5a")
     ),
     new Alert(
       {
@@ -57,7 +57,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "EMAIL", 
         alertDate: new Date()
       },
-      "dcde36c0-994d-4465-a585-b72cb26a0217"
+      new UniqueEntityID("dcde36c0-994d-4465-a585-b72cb26a0217")
     ),
 
     new Alert(
@@ -66,7 +66,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "NOTIFICATION", 
         alertDate: new Date()
       },
-      "45b2fe3d-69a2-492c-b023-ac9f683bf599"
+      new UniqueEntityID("45b2fe3d-69a2-492c-b023-ac9f683bf599")
     ),
     new Alert(
       {
@@ -74,7 +74,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "EMAIL", 
         alertDate: new Date()
       },
-      "696b783b-6d6f-4ebf-b70c-7e415f1657f3"
+      new UniqueEntityID("696b783b-6d6f-4ebf-b70c-7e415f1657f3")
     ),
     new Alert(
       {
@@ -82,7 +82,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "NOTIFICATION", 
         alertDate: new Date()
       },
-      "4308a98f-4ce8-41a1-ad1d-8bf36748922e"
+      new UniqueEntityID("4308a98f-4ce8-41a1-ad1d-8bf36748922e")
     ), 
     new Alert(
       {
@@ -90,7 +90,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "EMAIL", 
         alertDate: new Date()
       },
-      "f578c244-6ef4-41dc-9073-7e0878543553"
+      new UniqueEntityID("f578c244-6ef4-41dc-9073-7e0878543553")
     ),
     new Alert(
       {
@@ -98,7 +98,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "NOTIFICATION", 
         alertDate: new Date()
       },
-      "a0d177b3-ca30-4dcb-9b4d-f478232ae6bf"
+      new UniqueEntityID("a0d177b3-ca30-4dcb-9b4d-f478232ae6bf")
     ),
     new Alert(
       {
@@ -106,7 +106,7 @@ export class AlertRepositoryMock implements IAlertRepository {
         method: "EMAIL", 
         alertDate: new Date()
       },
-      "2927ef7c-d38b-4ea0-bd44-be01458d1526"
+      new UniqueEntityID("2927ef7c-d38b-4ea0-bd44-be01458d1526")
     ),
   ];
 

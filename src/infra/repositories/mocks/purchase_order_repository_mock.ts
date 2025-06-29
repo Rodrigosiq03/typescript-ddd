@@ -1,6 +1,7 @@
 // import { PurchaseOrder } from "../entities/purchase_order";
 import { PurchaseOrder } from "../../../domain/entities/purchase_order";
 import { IPurchaseOrderRepository } from "../../../domain/repositories/purchase_order_repository_interface";
+import { UniqueEntityID } from "../../../core/entities/unique_entity_id";
 
 export class PurchaseOrderRepositoryMock implements IPurchaseOrderRepository {
   private purchaseOrders: PurchaseOrder[] = [
@@ -12,7 +13,7 @@ export class PurchaseOrderRepositoryMock implements IPurchaseOrderRepository {
         createdAt: new Date(), 
         estimatedDeliveryDate: new Date() 
       },
-      "95e5f6de-494a-4b39-a16b-a26758fe9bcc"
+      new UniqueEntityID("95e5f6de-494a-4b39-a16b-a26758fe9bcc")
     ),
     new PurchaseOrder(
       { 
@@ -22,7 +23,7 @@ export class PurchaseOrderRepositoryMock implements IPurchaseOrderRepository {
         createdAt: new Date(), 
         estimatedDeliveryDate: new Date() 
       },
-      "d11a0b29-5a69-4970-a169-744d4a34124b"
+      new UniqueEntityID("d11a0b29-5a69-4970-a169-744d4a34124b")
     )
   ];
 
