@@ -1,4 +1,5 @@
 import { Entity } from "../../core/entities/entity";
+import { UniqueEntityID } from "../../core/entities/unique_entity_id";
 
 export interface PurchaseOrderProps {
   productId: string;
@@ -27,5 +28,16 @@ export class PurchaseOrder extends Entity<PurchaseOrderProps> {
 
   get estimatedDeliveryDate() {
     return this.props.estimatedDeliveryDate;
+  }
+
+  static create(
+    props: PurchaseOrderProps,
+    id?: UniqueEntityID
+  ): PurchaseOrder {
+    return new PurchaseOrder({
+      ...props,
+      createdAt: props.createdAt ?? new Date(),
+      estimatedDeliveryDate: props.estimatedDeliveryDate ?? new Date(),
+    }, id);
   }
 }

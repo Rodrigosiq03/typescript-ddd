@@ -19,4 +19,14 @@ export class Alert extends Entity<AlertProps> {
   get method() {
     return this.props.method;
   }
+
+  static create(
+    props: AlertProps,
+    id?: UniqueEntityID
+  ): Alert {
+    return new Alert({
+      ...props,
+      alertDate: props.alertDate ?? new Date(),
+    }, id);
+  }
 }
