@@ -17,20 +17,4 @@ export abstract class AggregateRoot<Props> extends Entity<Props> {
   public clearEvents() {
     this._domainEvents = []
   }
-
-  public equals(other: AggregateRoot<Props>): boolean {
-    if (other === this) {
-      return true
-    }
-
-    if (other === null || other === undefined) {
-      return false
-    }
-
-    if (this.constructor !== other.constructor) {
-      return false
-    }
-
-    return this.id.equals(other.id)
-  }
 }
